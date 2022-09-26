@@ -84,11 +84,23 @@ img{
     color: var(--main-color);
 }
 .landing{
+    height: 83vh;
+    position: relative;
+}
+.landing.roofing{
     background: linear-gradient(rgba(32, 32, 32, 0.65), rgba(24, 24, 24, 0.75)), url("../images/portfolio6.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    height: 83vh;
-    position: relative;
+}
+.landing.architecture{
+    background: linear-gradient(rgba(32, 32, 32, 0.65), rgba(24, 24, 24, 0.75)), url("../images/corporate-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.landing.plumbing{
+    background: linear-gradient(rgba(32, 32, 32, 0.65), rgba(24, 24, 24, 0.75)), url("../images/landing-bg2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 header{
     background:transparent;
@@ -289,10 +301,11 @@ header .logo img{
 }
 .service-body-content{
     display: flex;
-  
+    gap: 40px;
 }
 .service-body-left-content{
      width: 27%;
+     flex-shrink: 0;
 }
 
 .service-navigation ul li{
@@ -402,4 +415,1035 @@ header .logo img{
 }
 .profile-part .image-profile img{
      border-radius: 50%;
+}
+
+.service-title h2{
+    font-size: 30px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    margin-bottom: 20px;
+}
+.service-title h2 span{
+    color: var(--main-color);
+}
+.service-title p{
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.service-types{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    margin: 50px 0;
+}
+
+.service-description{
+    margin: 20px 0;
+}
+.service-description h2{
+    font-size: 22px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.service-description p{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.accordion-moja{
+    padding: 10px 20px;
+    border:1px solid gainsboro; 
+    margin-bottom: 20px;
+}
+.accordion-feature{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    align-items: center;
+}
+.accordion-feature .left-feature-section{
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+.accordion-feature span{
+     display: inline-flex;
+     font-size: 18px;
+}
+.left-feature-section h3{
+    font-size:18px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.accordion-feature.active .left-feature-section h3{
+     color: var(--secondary-color);
+}
+.accordion-feature .right-feature-section span{
+    transition: transform 0.5s ease;
+}
+.accordion-feature.active .right-feature-section span{
+     transform: rotate(180deg)
+}
+.accordion-feature-description{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.accordion-feature-description p{
+    font-size: 16px;
+    line-height: 28px;
+}
+.accordion-feature-inner{
+    border-top: 1px solid gainsboro;
+    padding-top: 10px;
+}
+
+/* Architecture page styling */
+.ideal-types{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.ideal-title h2{
+    font-size: 28px;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    font-family: "Montserrat";
+}
+.ideal-title h2 span{
+    color: var(--main-color);
+}
+.ideal-title::after{
+     content: "";
+     width: 60px;
+     height: 3px;
+     background: var(--main-color);
+     display: block;
+     margin-top: 10px;
+}
+.ideal-moja p{
+    font-size: 16px;
+    line-height: 28px;
+    margin: 20px 0;
+}
+
+.ideal-moja a{
+    font-size: 18px;
+    color: var(--main-color);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.ideal-moja a span{
+    display: inline-flex;
+}
+.ideal-moja a:hover {
+    color: var(--secondary-color);
+}
+
+.bulky-content.architecture .service-type-moja .image-section{
+      height: 250px;
+}
+.bulky-content.architecture img{
+    object-fit: cover;
+}
+.satisfaction-nudge{
+    text-align: center;
+}
+.satisfaction-nudge h2{
+    font-size: 35px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: "Montserrat";
+}
+.satisfaction-nudge h2 span{
+    color: var(--main-color);
+}
+
+.satisfaction-nudge p{
+    margin: 20px 0;
+    line-height: 28px;;
+}
+
+.satisfaction-nudge .satisfaction-btns{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.satisfaction-btns a{
+     width: 150px;
+     height: 45px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 12px;
+     text-transform: uppercase;
+     transition: all 0.5s ease;
+}
+
+.satisfaction-btns a:first-child{
+    border: 1px solid var(--secondary-color);
+}
+.satisfaction-btns a:first-child:hover,
+.satisfaction-btns a:last-child:hover{
+    background: var(--secondary-color);
+    color: white;
+}
+.satisfaction-btns a:last-child{
+     background: var(--main-color);
+     color: var(--secondary-color);
+}
+
+/* construction page styling */
+.image-types{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.image-moja.touch-up{
+    grid-row: 1/3;
+     grid-column: 2/3;
+}
+
+.small-contact-nudge{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.small-contact-nudge a{
+     display: flex;
+     align-items: center;
+     width: 150px;
+     height: 45px;
+     background: var(--main-color);
+     flex-shrink: 0;
+     justify-content: center;
+     gap: 5px;
+     color: var(--secondary-color);
+     transition: all 0.5s ease;
+     text-transform: uppercase;
+     font-size: 12px;
+}
+.small-contact-nudge span{
+    font-size: 16px;
+}
+.small-contact-nudge a:hover{
+      color: white;
+      background: var(--secondary-color);
+}
+
+.expertise-types{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     margin: 50px 0;
+     gap: 30px;
+}
+.expertise-type-moja .icon-section{
+      width: 60px;
+      height: 60px;
+      margin-bottom: 20px;
+}
+.expertise-type-moja .icon-section img{
+      object-fit: contain;
+}
+.expertise-type-moja h2{
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+.expertise-type-moja p{
+     margin: 10px 0;
+}
+
+/* Painting page styling */
+.image-content{
+    margin-bottom: 20px;
+}
+.painting-title{
+      margin: 30px 0;
+      text-align: center;
+}
+.painting-title .ideal-title::after{
+      margin: 10px auto;
+}
+.painting-type-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+.painting-moja{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.painting-moja .icon-section{
+     flex-shrink: 0;
+     margin-top: 15px;
+}
+.painting-moja .icon-section img{
+    object-fit: contain;
+}
+.painting-text h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.best-price{
+    margin: 30px 0;
+}
+
+
+/* Plumbing page styling */
+.plumbing-types{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: 30px;
+}
+.plumbing-moja h2{
+     font-size: 18px;
+     text-transform: uppercase;
+     margin: 15px 0;
+     font-family: "Montserrat";
+     font-weight: 600;
+}
+.plumbing-moja p{
+      line-height: 28px;
+}
+
+.plumbing-reason{
+    margin: 50px 0;
+    text-align: center;
+}
+.plumbing-reason .ideal-title::after{
+     margin: 30px auto;
+}
+.plumbing-reason p{
+    line-height: 28px;
+}
+.plumbing-reason-row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin: 80px 0px 50px 0px;
+}
+
+.plumbing-reason-moja{
+      border: 1px solid gainsboro;;
+      padding: 40px;
+      position:relative;
+}
+.plumbing-reason-moja .icon-section{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -40px;
+      width: 70px;
+      height: 70px;    
+      border-radius: 50%;
+      background: var(--secondary-color);
+      padding: 5px;
+      transition: all 0.5s ease;
+}
+.plumbing-reason-moja .icon-section img{
+    filter: invert(100%);
+    transition: all 0.5s ease;
+}
+
+.plumbing-reason-moja h2{
+     margin: 20px 0;
+     font-family: "Montserrat";
+     font-size: 18px;
+     text-transform: uppercase;
+}
+.plumbing-reason-moja p{
+     line-height: 28px;
+}
+
+.plumbing-reason-moja a{
+       text-transform: uppercase;
+       font-size: 15px;
+       display: flex;
+       justify-content: center;
+       margin: 20px 0;
+       gap: 5px;
+       align-items: center;
+       font-weight: bold;
+       color: var(--secondary-color);
+}
+.plumbing-reason-moja a span{
+     display: flex;
+     margin-top: -3px;
+     color: var(--main-color);
+}
+.plumbing-reason-moja:hover .icon-section{
+      background: var(--main-color);
+}
+.plumbing-reason-moja:hover .icon-section img{
+      filter: invert(0);
+}
+.plumbing-reason-moja:hover a{
+     color: var(--main-color);
+}
+
+/* Electrician page Styling */
+
+.electrician-images,
+.electrician-features,
+.extras{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.electrician-images .image-moja:last-child{
+     grid-column: 1/3;
+}
+
+.electrician-features{
+    margin: 40px 0;
+}
+.feature-moja h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.feature-moja p{
+    line-height: 28px;
+}
+
+.extra-moja{
+    display: flex;
+    gap: 10px;
+    border: 1px solid gainsboro;
+    padding: 30px 20px;
+}
+.extra-moja .extra-icon{
+     flex-shrink: 0;
+     width: 60px;
+     height: 60px;
+}
+
+.extra-moja h2{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.extra-moja p{
+    line-height: 28px;
+}
+
+
+
+#call-to-action{
+    background:rgba(255, 191, 14, 0.959);
+}
+.call-to-action-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.call-to-action-content .description{
+    padding:60px 0;
+    grid-column: 1/3;
+    background:rgba(255, 191, 14, 0.959);
+}
+.call-to-action-content .description-inner{
+    width:80%;
+    margin:auto;
+}
+.call-to-action-content .description h2{
+    font-size:35px;
+    font-weight: 100;
+}
+.call-to-action-content .description h1{
+    font-size:35px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    margin:5px;
+    font-weight: 600;
+}
+.call-to-action-content .button-side{
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 50%);
+    background:rgb(247, 181, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-side a{
+    width: 200px;
+    height: 55px;
+    border: 1px solid var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.button-side a:hover{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+footer{
+    background:rgba(0, 94, 156);
+    padding:100px 0 80px 0;
+}
+footer .inner-row{
+    width:1200px;
+}
+
+.footer-logo{
+    width:250px;
+    margin-bottom: 30px;
+}
+
+.footer-content{
+    display: grid;
+    margin:auto;
+    grid-template-columns: repeat(4,1fr);
+    gap:50px;
+}
+.footer-column p{
+    font-size:18px;
+    color: var(--whitesmoke);
+    line-height: 30px;
+    color: gainsboro;
+}
+
+.footer-social-links{
+    margin-top:20px;
+}
+.footer-social-links ul{
+    display: flex;
+    gap:30px;
+}
+.footer-social-links ul li a{
+    font-size:24px;
+    color:white;
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+}
+.footer-social-links ul li a:hover{
+    color: var(--main-color);
+}
+
+.footer-column .footer-title{
+     text-transform: uppercase;
+     color: var(--whitesmoke);
+     font-weight:bold;
+     font-family: "Montserrat";
+     font-size: 25px;
+     position: relative;
+     padding-left:5%;
+    margin-bottom:18%;
+}
+.footer-title::before{
+    content: "";
+     position: absolute;
+     width:4px;
+     height: 100%;
+     background: var(--main-color);
+     left:0;
+}
+.footer-column ul{
+    padding-left: 5%;
+}
+.footer-column ul li{
+    line-height: 40px;
+}
+.footer-column ul li a{
+    font-size: 18px;
+    position:relative;
+    color: gainsboro;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.footer-column ul li a:hover{
+     color: var(--main-color);
+}
+.footer-column ul li a::after{
+    content: "";
+    width:0;
+    height:2px;
+    background:var(--main-color);
+    position:absolute;
+    bottom:-5px;
+    left:50%;
+    transition:all 0.8s ease;
+    -webkit-transition:all 0.8s ease;
+    -moz-transition:all 0.8s ease;
+    -ms-transition:all 0.8s ease;
+    -o-transition:all 0.8s ease;
+}
+.footer-column ul li a:hover::after{
+    width:100%;
+    left:0;
+}
+
+.contact-moja{
+    display: flex;
+    gap:10px;
+    margin-bottom: 20px;
+}
+.contact-moja span{
+    font-size:30px;
+    color: var(--main-color);
+}
+
+.footer-input,
+.textarea{
+    margin-bottom: 20px;
+    position: relative;
+}
+.footer-input input{
+    width:100%;
+    height:50px;
+    text-transform: uppercase;
+    padding-left:10px;
+    outline:none;
+    border:none;
+    background:transparent;
+    color: gainsboro;
+    font-family: "Nunito";
+}
+.footer-column ::placeholder{
+    color: gainsboro;
+    font-size:13px;
+}
+.footer-input::after,
+.footer-column .textarea::after{
+    content: "";
+    width:100%;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom:0;
+    left:0;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+.footer-input:hover::after,
+.footer-column .textarea:hover::after{
+     width:0;
+}
+.footer-input::before,
+.footer-column .textarea::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width:0;
+    height: 2px;
+    background-color: var(--whitesmoke);
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+
+.footer-input:hover::before,
+.footer-column .textarea::before{
+    width:100%;
+}
+
+.footer-column textarea{
+    padding: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "Nunito";
+    width:100%;
+    height: 150px;
+    border:none;
+    background: transparent;
+    color: gainsboro;
+    position:relative;
+    resize: none;
+    outline:none;
+}
+
+.footer-form button{
+    width:100%;
+    font-family: "Nunito";
+    height:50px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border:none;
+    color: var(--secondary-color);
+    background: var(--main-color);
+}
+.copyright-section{
+    padding: 30px 0;
+    background:rgb(33, 57, 107);
+}
+.copyright-section  .inner-row{
+    width: 1200px;
+}
+.copyright-section-content{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: gainsboro;
+}
+.copyright-section p{
+    font-size:15px;
+}
+.copyright-section ul{
+    display: flex;
+    gap:30px;
+}
+.copyright-section ul li a{
+    color: gainsboro;
+    font-size:15px;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    position: relative;
+}
+.copyright-section ul li a:hover{
+    color: var(--main-color);
+}
+.copyright-section ul li a::after{
+    content: "";
+    width: 0%;
+    height:2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom:-5px;
+    left: 50%;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+.copyright-section ul li a:hover::after{
+     width:100%;
+     left:0;
+}
+
+
+@media(max-width:1220px){
+    header .inner-row,
+    .topbar .inner-row,
+    #service-body .inner-row,
+    footer .inner-row,
+    .copyright-section .inner-row{
+        width:90%;
+    }
+   
+    .footer-content{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:1100px){
+   .copyright-section-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:20px;
+   }
+   .quote-part{
+       padding: 20px;
+   }
+}
+@media(max-width:1000px){
+    .mobile-trigger-btn{
+        display: block;
+    }
+    .header-content nav ul{
+        display: none;
+    }
+    .header-content nav{
+        padding:15px;
+        justify-content: flex-end;
+    }
+    .header-top-section{
+        justify-content: center;
+    }
+    .header-top-section .quick-contact-details{
+        display: none;
+    }
+   .service-body-content{
+        flex-direction: column;
+   }
+
+   .service-body-left-content{
+        width: 500px;
+        margin:auto;
+   }
+  
+   .call-to-action-content{
+      grid-template-columns: repeat(1,1fr);
+      padding-bottom: 80px;
+   }
+   .call-to-action-content .description{
+    text-align: center;
+    padding-bottom: 30px;
+   }
+   .call-to-action-content .button-side{
+       clip-path: none;
+       background:none;
+   }
+}
+@media(max-width:768px){
+    .footer-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-column .footer-title{
+        margin-bottom: 5%;
+    }
+    .copyright-section ul{
+         flex-wrap: wrap;
+         justify-content: center;
+    }
+
+    .image-types,
+    .painting-type-container,
+    .plumbing-reason-row,
+    .plumbing-types,
+    .extras,
+    .electrician-images,
+    .electrician-features{
+        grid-template-columns: repeat(1,1fr);
+    }
+     .image-moja.touch-up{
+         grid-row: 4/4;
+         grid-column: 1/2;
+     }
+     .electrician-images .image-moja:last-child{
+        grid-column: 1/2;
+   }
+     .small-contact-nudge{
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 20px;
+     }
+}
+
+@media(max-width:600px){
+    .topbar-content{
+        flex-direction: column;
+        gap:5px;
+        align-items: center;
+    }
+   
+    .landing .landing-texts{
+        width: 270px;
+        align-items: center;
+        right: 50%;
+        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+}
+.landing-texts h1{
+    font-size:25px;
+}
+.landing-texts h2{
+    display: flex;
+    font-size: 15px;
+    gap: 10px;
+}
+
+    .intro-text h1{
+        font-size:40px;
+    }
+    .intro-text p{
+        font-size:16px;
+        line-height: 30px;;
+    }
+    .service-types,
+    .ideal-types,
+    .expertise-types{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .service-body-left-content{
+        width: 100%;
+    }
+}
+
+@media(max-width:480px){
+    .landing .landing-texts{
+        flex-wrap: wrap;
+        gap:0;
+    }
+    .landing-texts h1{
+        font-size:25px;
+    }
+    .landing-texts h2{
+        display: flex;
+        font-size: 15px;
+    }
+    .slick-arrow{
+        border: 1px solid;
+        left: 40%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
+   .slick-arrow.next-arrow{
+       left:60%;
+       transform: translateX(-50%)   ;
+       -webkit-transform: translateX(-50%)   ;
+       -moz-transform: translateX(-50%)   ;
+       -ms-transform: translateX(-50%)   ;
+       -o-transform: translateX(-50%)   ;
+}
+}
+
+
+
+
+/*Keyframes*/
+@keyframes inMd {
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(45deg);
+    }
+  }
+  
+  @keyframes outMd {
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(45deg);
+    }
+  }
+  
+  @keyframes inTp {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(9px) rotate(135deg);
+    }
+  }
+  
+  @keyframes outTp {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(9px) rotate(135deg);
+    }
+  }
+  
+  @keyframes inBtm {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-9px) rotate(135deg);
+    }
+  }
+  
+  @keyframes outBtm {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-9px) rotate(135deg);
+    }
+  }
+
+  
+@keyframes grow-width{
+    0%{
+        width:0;
+        transition:all 2s ease    ;
+        -webkit-transition:all 2s ease    ;
+        -moz-transition:all 2s ease    ;
+        -ms-transition:all 2s ease    ;
+        -o-transition:all 2s ease    ;
+}
+    100%{
+         width:100%;
+         transition: all 2s ease;
+         -webkit-transition: all 2s ease;
+         -moz-transition: all 2s ease;
+         -ms-transition: all 2s ease;
+         -o-transition: all 2s ease;
+}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+
+}
+
+@keyframes rotateBack{
+    0%{
+         transform:none;
+         -webkit-transform:none;
+         -moz-transform:none;
+         -ms-transform:none;
+         -o-transform:none;
+}
+     100%{
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+}
 }
